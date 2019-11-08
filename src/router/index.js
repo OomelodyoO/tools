@@ -10,6 +10,10 @@ Vue.use(Router);
 export default new Router({
     routes: [
         {
+            path: '/',
+            redirect: 'encryption'
+        },
+        {
             path: '/encryption',
             name: 'encryption',
             components: {default: Encryption}

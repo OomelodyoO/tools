@@ -8,11 +8,15 @@
         <el-row>
             <el-col :span="2">明文：</el-col>
             <el-col :span="10">
-                <el-input v-model="plaintext" placeholder="请输入明文" @input="changeCipherText"></el-input>
+                <el-input v-model="plaintext" placeholder="请输入明文" type="textarea"
+                          :autosize="{ minRows: 10, maxRows: 10}"
+                          @input="changeCipherText"></el-input>
             </el-col>
             <el-col :span="2">盐值：</el-col>
             <el-col :span="10">
-                <el-input v-model="salt" placeholder="请输入盐值" @input="changeCipherText"></el-input>
+                <el-input v-model="salt" placeholder="请输入盐值" type="textarea"
+                          :autosize="{ minRows: 10, maxRows: 10}"
+                          @input="changeCipherText"></el-input>
             </el-col>
         </el-row>
         <el-row>
@@ -57,9 +61,9 @@
                 plaintext: '',
                 salt: '',
                 md5CipherText: this.$crypto.MD5(this.plaintext + this.salt).toString(),
-                sha1CipherText:  this.$crypto.SHA1(this.plaintext + this.salt).toString(),
-                sha256CipherText:  this.$crypto.SHA256(this.plaintext + this.salt).toString(),
-                sha512CipherText:  this.$crypto.SHA512(this.plaintext + this.salt).toString()
+                sha1CipherText: this.$crypto.SHA1(this.plaintext + this.salt).toString(),
+                sha256CipherText: this.$crypto.SHA256(this.plaintext + this.salt).toString(),
+                sha512CipherText: this.$crypto.SHA512(this.plaintext + this.salt).toString()
             }
         },
         methods: {
