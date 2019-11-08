@@ -8,10 +8,10 @@
             </el-header>
             <el-container>
                 <el-aside width="200px">
-                    <Menu/>
+                    <Navigation/>
                 </el-aside>
                 <el-main>
-                    <Encryption/>
+                    <router-view></router-view>
                 </el-main>
             </el-container>
         </el-container>
@@ -19,14 +19,12 @@
 </template>
 
 <script>
-    import Menu from './components/navigation/Navigation.vue'
-    import Encryption from './components/content/encryption/Encryption.vue'
+    import Navigation from '@/components/navigation/Navigation'
 
     export default {
         name: 'app',
         components: {
-            Menu,
-            Encryption
+            Navigation
         },
     }
 </script>
