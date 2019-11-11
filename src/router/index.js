@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 const Encryption = () => import("@/components/content/encryption/Encryption");
+const Transcoding = () => import("@/components/content/transcoding/Transcoding");
 const Time = () => import("@/components/content/time/Time");
 const Letter = () => import("@/components/content/letter/Letter");
 
@@ -17,6 +18,11 @@ export default new Router({
             path: '/encryption',
             name: 'encryption',
             components: {default: Encryption}
+        },
+        {
+            path: '/transcoding',
+            name: 'transcoding',
+            components: {default: Transcoding}
         },
         {
             path: '/time',

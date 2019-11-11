@@ -1,10 +1,10 @@
 <template>
     <div id="letter">
-        <el-row justify="center">
+        <el-row>
             <el-button type="primary" @click="changeCase('upper')">转大写</el-button>
             <el-button type="primary" @click="changeCase('lower')">转小写</el-button>
-            <el-button type="primary" @click="changeNaming('camelBakToUnderLine')">驼峰转下划线</el-button>
-            <el-button type="primary" @click="changeNaming('underLineToCamelBak')">下划线转驼峰</el-button>
+            <el-button type="primary" @click="changeNaming('camelBakToUnderLine')">驼峰 转 下划线</el-button>
+            <el-button type="primary" @click="changeNaming('underLineToCamelBak')">下划线 转 驼峰</el-button>
         </el-row>
         <el-row>
             <el-col :span="1">输入：</el-col>

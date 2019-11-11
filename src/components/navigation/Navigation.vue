@@ -6,12 +6,17 @@
                 <span slot="title">加密</span>
             </el-menu-item>
 
-            <el-menu-item index="2" route="/time">
+            <el-menu-item index="2" route="/transcoding">
+                <i class="el-icon-menu"></i>
+                <span slot="title">转码</span>
+            </el-menu-item>
+
+            <el-menu-item index="3" route="/time">
                 <i class="el-icon-menu"></i>
                 <span slot="title">时间</span>
             </el-menu-item>
 
-            <el-menu-item index="3" route="/letter">
+            <el-menu-item index="4" route="/letter">
                 <i class="el-icon-menu"></i>
                 <span slot="title">字母</span>
             </el-menu-item>
